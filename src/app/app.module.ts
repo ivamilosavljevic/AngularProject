@@ -9,9 +9,16 @@ import { HeaderComponent } from './header/header.component';
 
 import {MatTabsModule} from '@angular/material/tabs';
 import { TabsComponent } from './tabs/tabs.component';
+
 import { AccomodationsComponent } from './accomodations/accomodations.component';
 import { CardsAccomodationComponent } from './cards-accomodation/cards-accomodation.component';
 import {MatCardModule} from '@angular/material/card';
+import { EventsComponent } from './events/events.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCardModule} from '@angular/material/card';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
+
 
 
 
@@ -21,14 +28,19 @@ import {MatCardModule} from '@angular/material/card';
     FooterComponent,
     HeaderComponent,
     TabsComponent,
+    EventsComponent,
+    PageNotFoundComponent,
     AccomodationsComponent,
-    CardsAccomodationComponent
+    CardsAccomodationComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatTabsModule,
+    BrowserAnimationsModule,
     MatCardModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
