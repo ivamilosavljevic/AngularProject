@@ -1,0 +1,7 @@
+.accomodations {
+    background-color: aliceblue;
+    display: flex;
+}
+app-cards-accomodation {
+    display: flex;
+}
