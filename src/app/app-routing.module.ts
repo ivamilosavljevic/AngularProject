@@ -4,6 +4,7 @@ import { TabsComponent } from './tabs/tabs.component';
 import { EventsComponent } from './events/events.component';
 import { FooterComponent } from './footer/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AccomodationsComponent } from './accomodations/accomodations.component';
 
 
 const routes: Routes = [];
@@ -14,6 +15,7 @@ const routes: Routes = [];
       {path:'', component:TabsComponent},
       {path:'home', component:TabsComponent},
       {path:'events', component:EventsComponent},
+      {path:'hotels', component:AccomodationsComponent},
       {path:'**', component:PageNotFoundComponent},
 
 
