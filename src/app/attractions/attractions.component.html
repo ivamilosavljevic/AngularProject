@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<div class="title">
+    <h1>Attractions
+      <span>explore Skopje</span>
+    </h1>
+</div>
+
+  <div class="columns"  *ngFor="let attraction of attractions" (click)="getItems(attraction)">
+  <div class = "card">
+    <img src={{attraction.picture}} alt="">
+    <div class="card-content">
+      <h2>
+        {{attraction.title}}
+      </h2>
+      <p>
+        {{attraction.description | slice: 0:210}}...
+      </p>
+      <a class="button" (click) = "openDialog(attraction)">
+        Find out more 
+        <span class="material-symbols-outlined">
+          arrow_right_alt
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
