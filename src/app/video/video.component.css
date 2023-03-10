@@ -1,0 +1,40 @@
+.wrapper{
+    align-items: center;
+    text-align: center;
+    background-image:"../../assets/videos/skopje.mp4" ;
+    background-color: brown;
+    z-index: -1;
+}
+
+.content{
+    text-align: center;
+}
+
+div{
+    margin: 50px;
+    color: whitesmoke
+}
+
+
+.video_wrapper{
+    height: 40vh ;
+    width: 100%;
+    /* object-fit: contain; */
+    margin-left: 200px;
+}
+
+
+
+
+
+/* @media screen and (max-width: 640px){
+    .content h1{
+        font-size: 3rem;
+    }
+
+    .content p{
+        font-size: 1.4rem;
+        margin-bottom: 1.6rem;
+        
+    }
+} */
