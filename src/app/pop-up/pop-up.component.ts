@@ -1,5 +1,11 @@
+
+import { Component, Inject } from '@angular/core';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { attractionsJSON } from '../api/attractions/attractions';
+import { IAttractions } from '../models';
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+
 
 @Component({
   selector: 'app-pop-up',
@@ -7,6 +13,15 @@ import { MatDialog } from '@angular/material/dialog';
   styleUrls: ['./pop-up.component.css']
 })
 export class PopUpComponent {
+
+  attraction: IAttractions | undefined;
+
+  constructor(@Inject(MAT_DIALOG_DATA) public data: {attraction: IAttractions} ){
+    console.log(data);
+    this.attraction = data.attraction;
+  }
+}
+
 constructor(public dialog: MatDialog) {}
 
   openDialog() {
@@ -24,3 +39,4 @@ constructor(public dialog: MatDialog) {}
   templateUrl: 'pop-up-dialog.html',
 })
 export class DialogContentExampleDialog {}
+

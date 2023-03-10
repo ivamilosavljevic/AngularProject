@@ -6,6 +6,14 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { HeaderComponent } from './header/header.component';
+import { AttractionsComponent } from './attractions/attractions.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import { RouterModule } from '@angular/router';
+import {MatTableModule} from '@angular/material/table';
+import {MatDialogModule} from '@angular/material/dialog';
+import { PopUpComponent } from './pop-up/pop-up.component';
 
 
 import {MatTabsModule} from '@angular/material/tabs';
@@ -36,6 +44,10 @@ import { CardSkopjeComponent } from './card-skopje/card-skopje.component';
   declarations: [
     AppComponent,
     FooterComponent,
+    NavigationBarComponent,
+    HeaderComponent,
+    AttractionsComponent,
+    PopUpComponent,
     HeaderComponent,
     TabsComponent,
     PageNotFoundComponent,
@@ -52,10 +64,23 @@ import { CardSkopjeComponent } from './card-skopje/card-skopje.component';
     CardSkopjeComponent,
 
 
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatButtonModule,
+    MatTableModule,
+    MatDialogModule,
+    RouterModule.forRoot([
+      { 
+        
+        path: 'attractions', component: AttractionsComponent },
+    ])
+      
+
     MatTabsModule,
     BrowserAnimationsModule,
     MatCardModule,
@@ -66,6 +91,7 @@ import { CardSkopjeComponent } from './card-skopje/card-skopje.component';
     FormsModule, 
     MatInputModule, 
     MatDialogModule
+
 
   ],
   providers: [],
