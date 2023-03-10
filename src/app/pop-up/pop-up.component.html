@@ -1,0 +1,12 @@
+<div class="popup" id="popup" *ngIf="attraction">
+  <div class="popup-inner">
+    <div class="popup__photo">
+      <img src={{attraction.picture}} alt="">
+    </div>
+    <div class="popup__text">
+      <h1>{{attraction.title}}</h1>
+      <p>{{attraction.description}}</p>
+    </div>  
+    <a class="popup__close" href="../attractions/">X</a>
+  </div>
+</div>
