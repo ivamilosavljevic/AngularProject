@@ -6,28 +6,25 @@
 <section class="articles">
   <article>
     <div class="article-wrapper">
-      <!-- <figure> -->
-        <!-- <img src="{{ Hotel.image }}" alt="" /> -->
-      <!-- </figure> -->
-      <div class="article-body">
+      <figure>
         <img src="{{ Hotel.image }}" alt="" />
-        <span class="container">
+      </figure>
+      <div class="article-body">
         <h2>{{ Hotel.name }}</h2>
         <p class="desc">{{Hotel.desc}}
-        </p>
-        <span class="sub-container">
-          <span>
+        <a href={{Hotel.link}} class="read-more">
+          Read more 
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a></p>
         <p class="address">{{ Hotel.address }}  
           
            </p>
            <svg class="uitk-icon uitk-field-icon uitk-icon-medium example-header-image" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <path fill-rule="evenodd" d="M12 2a7 7 0 0 0-7 7.01c0 4.18 4.42 9.94 6.24 12.13a1 1 0 0 0 1.53 0C14.58 18.94 19 13.19 19 9.01A7 7 0 0 0 12 2zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" clip-rule="evenodd">
 
-          </path></svg></span>
-          <mat-card-actions>
-            <a mat-stroked-button color="primary" href={{Hotel.link}} class="listBtn">Make reservation</a>
-           </mat-card-actions></span>
-        </span>
+          </path></svg>
       </div>
     </div>
   </article>

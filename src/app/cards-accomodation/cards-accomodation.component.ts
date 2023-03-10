@@ -10,4 +10,7 @@ import { HotelsList } from './hotels-list';
 export class CardsAccomodationComponent {
 
   @Input() Hotel!: HotelsList;
+
+
+  
 }
