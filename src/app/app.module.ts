@@ -12,11 +12,15 @@ import { TabsComponent } from './tabs/tabs.component';
 
 import { AccomodationsComponent } from './accomodations/accomodations.component';
 import { CardsAccomodationComponent } from './cards-accomodation/cards-accomodation.component';
-import {MatCardModule} from '@angular/material/card';
-import { EventsComponent } from './events/events.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import {MatButtonModule} from '@angular/material/button';
+import { VideoComponent } from './video/video.component';
+import { CardPicsComponent } from './card-pics/card-pics.component';
+import { EventCardComponent } from './event-card/event-card.component';
+
 
 
 
@@ -28,10 +32,13 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     FooterComponent,
     HeaderComponent,
     TabsComponent,
-    EventsComponent,
     PageNotFoundComponent,
     AccomodationsComponent,
     CardsAccomodationComponent,
+    VideoComponent,
+    CardPicsComponent,
+    EventCardComponent,
+   
 
   ],
   imports: [
@@ -39,7 +46,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AppRoutingModule,
     MatTabsModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
 
   ],
   providers: [],
