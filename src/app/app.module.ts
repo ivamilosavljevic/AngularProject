@@ -18,33 +18,27 @@ import { PopUpComponent } from './pop-up/pop-up.component';
 
 import {MatTabsModule} from '@angular/material/tabs';
 import { TabsComponent } from './tabs/tabs.component';
-
 import { AccomodationsComponent } from './accomodations/accomodations.component';
 import { CardsAccomodationComponent } from './cards-accomodation/cards-accomodation.component';
-
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import {MatButtonModule} from '@angular/material/button';
 import { VideoComponent } from './video/video.component';
 import { CardPicsComponent } from './card-pics/card-pics.component';
 import { EventCardComponent } from './event-card/event-card.component';
 import { CardHotelComponent } from './card-hotel/card-hotel.component';
-import {MatButtonModule} from '@angular/material/button';
 import { CardsRecomendedHotelsComponent } from './cards-recomended-hotels/cards-recomended-hotels.component';
 import { FormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { SearchBarComponent } from './search-bar/search-bar.component';
-import { PopUpComponent } from './pop-up/pop-up.component';
-import {MatDialogModule} from '@angular/material/dialog';
+
 import { CardSkopjeComponent } from './card-skopje/card-skopje.component';
+import { LenchePopupComponent } from './lenche-popup/lenche-popup.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    NavigationBarComponent,
     HeaderComponent,
     AttractionsComponent,
     PopUpComponent,
@@ -62,6 +56,7 @@ import { CardSkopjeComponent } from './card-skopje/card-skopje.component';
     SearchBarComponent,
     PopUpComponent,
     CardSkopjeComponent,
+    LenchePopupComponent,
 
 
 
@@ -78,13 +73,13 @@ import { CardSkopjeComponent } from './card-skopje/card-skopje.component';
       { 
         
         path: 'attractions', component: AttractionsComponent },
-    ])
+    ]),
       
 
     MatTabsModule,
     BrowserAnimationsModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
     MatCardModule, 
     MatButtonModule, 
     MatFormFieldModule,

@@ -6,8 +6,11 @@
     z-index: -1;
 }
 
-.content{
+.wrapper .content{
     text-align: center;
+    font-style: oblique;
+    text-transform: capitalize;
+    background-color: rgb(26, 26, 26);
 }
 
 div{

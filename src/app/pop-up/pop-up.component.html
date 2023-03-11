@@ -1,18 +1,12 @@
-
 <div class="popup" id="popup" *ngIf="attraction">
   <div class="popup-inner">
-    <div class="popup__photo">
+    <div class="popupphoto">
       <img src={{attraction.picture}} alt="">
     </div>
-    <div class="popup__text">
+    <div class="popuptext">
       <h1>{{attraction.title}}</h1>
       <p>{{attraction.description}}</p>
-    </div>  
+    </div>
     <a class="popup__close" href="../attractions/">X</a>
   </div>
 </div>
-
-<p>pop-up works!</p>
-
-<button mat-button (click)="openDialog()">Open dialog</button>
-

@@ -9,11 +9,12 @@ nav{
     
 }
 nav img{
-    width: 70px;
+    width: 80px;
 
 }
 
 nav ul{
+    font-size: large;
     float:right;
     list-style-type:none;
 
